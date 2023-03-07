@@ -1,38 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
 .App {
+  padding: 1em;
+}
+
+html {
+  background-color: #091540;
+}
+
+textarea {
+  background-color: rgba(247, 247, 250, 0.986);
+  font-family: 'Book Antiqua';
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+
+input {
+  align-items: start;
+  width: 75%;
+  height: 100%;
+}
+
+label {
+  display: inline-block;
+  font-family: 'Playfair';
+}
+
+header {
+  font-family: 'Book Antiqua';
+  font-size: 64px;
   text-align: center;
+  color: azure;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html {
+  font-family: 'helvetica neue', sans-serif;
+}
+
+thead th, tfoot th {
+  font-family: 'Book Antiqua';;
+}
+
+th {
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+td {
+  letter-spacing: 1px;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+} 
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  overflow:hidden;
+  color: azure;
+  background-color: #3D518C;
+}
+
+.content_td p {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+  white-space: nowwrap;
 }
 
-.App-link {
-  color: #61dafb;
+tbody tr:nth-child(odd) {
+  background-color: #ABD2FA;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Column Size table head*/
+
+thead col {
+  width: 10%;
+}
+
+thead:nth-child(7), thead:nth-child(8) {
+  width: 30%;
+}
+
+/* Column size table body */
+
+tbody col {
+  width: 10%;
+}
+
+tbody:nth-child(7), tbody:nth-child(8) {
+  width: 30%;
 }
