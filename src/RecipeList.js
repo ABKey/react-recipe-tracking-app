@@ -19,9 +19,11 @@ function RecipeList({ recipes, deleteRecipe }) {
         <tbody>
         {recipes.map((recipe, index) => (
             <RecipeView
+
               deleteRecipe={() => deleteRecipe(index)}
               key={index}
               recipe={recipe}
+              
             />
           ))}
         </tbody>
